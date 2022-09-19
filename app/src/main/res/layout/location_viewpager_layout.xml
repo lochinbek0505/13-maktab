@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:gravity="center"
+	android:orientation="vertical">
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:fontFamily="@font/days2"
+		android:textSize="30sp"
+		android:layout_margin="15dp"
+		android:text="Bino manzili"
+		android:textColor="@color/black"
+		/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="20dp"
+		android:layout_marginEnd="10dp"
+		android:layout_marginTop="10dp"
+		android:text="Maktab binosi joylashuvini
+		\nilovadan chiqmagan holda
+		\n\t\t\t\ttopish imkoniyati
+		\n\t\t\t\t\t\t\t\tmavjud."
+		android:textColor="@color/black"
+		android:textSize="18sp" />
+
+	<com.airbnb.lottie.LottieAnimationView
+		android:layout_width="300dp"
+		android:layout_height="210dp"
+		app:lottie_autoPlay="true"
+		app:lottie_fileName="location.json"/>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:gravity="center"
+	tools:context=".activity.WelcomeActivity">
+
+	<ImageView
+		android:layout_width="280dp"
+		android:layout_height="200dp"
+		android:src="@drawable/ic_welcome_viewpager"/>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:fontFamily="@font/days2"
+		android:textSize="33sp"
+		android:text="Xush kelibsiz!!!"
+		android:textColor="@color/black"
+		/>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="10dp"
+		android:layout_marginTop="20dp"
+		android:layout_marginEnd="10dp"
+		android:text="Boshlash uchun pastdagi
+\n\t\t\t'Boshlash' tugmasini
+\n\t\t\t\t\t\t\t\tbosing."
+		android:textColor="@color/black"
+		android:textSize="20sp" />
+	<com.google.android.material.button.MaterialButton
+		android:id="@+id/btn_boshlash"
+		android:layout_width="200dp"
+		android:layout_height="65dp"
+		android:layout_marginTop="90dp"
+		android:text="Boshlash"
+		android:textStyle="bold"
+		app:icon="@drawable/ic_baseline_arrow_forward_ios_24"
+		app:iconGravity="end"
+		app:cornerRadius="10dp"/>
+</LinearLayout>

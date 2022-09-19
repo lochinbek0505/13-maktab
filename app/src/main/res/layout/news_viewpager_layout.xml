@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:gravity="center"
+	android:orientation="vertical">
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:fontFamily="@font/days2"
+		android:text="Eng so'ngi yangiliklar"
+		android:textColor="@color/black"
+		android:textSize="25sp" />
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:text="Birinchilardan bo'lib yangilik
+\n\t\t\tva e'lonlardan xabardor
+\n\t\t\t\t\t\t\t\tbo'ling."
+		android:textColor="@color/black"
+		android:textSize="18sp" />
+
+	<com.airbnb.lottie.LottieAnimationView
+		android:layout_width="300dp"
+		android:layout_height="210dp"
+		app:lottie_autoPlay="true"
+		app:lottie_fileName="news.json"/>
+
+</LinearLayout>

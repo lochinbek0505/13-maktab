@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="250dp"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_margin="10dp"
+	android:background="@color/white"
+	app:cardElevation="10dp"
+	app:cardCornerRadius="15dp">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<ImageView
+				android:id="@+id/iv_big_item"
+				android:layout_width="match_parent"
+				android:layout_height="150dp"
+				android:scaleType="centerCrop"
+				android:src="@drawable/ic_information_viewpager"
+				/>
+
+			<TextView
+				android:id="@+id/tv_big_item"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/iv_big_item"
+				android:layout_centerHorizontal="true"
+				android:layout_marginStart="10dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginEnd="10dp"
+				android:layout_marginBottom="10dp"
+				android:maxLines="2"
+				android:ellipsize="end"
+				android:text="android:background=@color/white
+		android:background=@color/whitehoihoijojoihoihiohiohiohoi"
+				android:textColor="@color/black"
+				android:textSize="18sp" />
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_alignParentBottom="true"
+				android:layout_alignParentEnd="true"
+				android:layout_margin="13dp"
+				android:gravity="center">
+				<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:src="@drawable/ic_baseline_access_time"/>
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="9.16.2022 9:00"
+					android:layout_marginStart="5dp"
+					android:layout_marginEnd="10dp"
+					android:textSize="16sp"
+					android:textStyle="bold"
+					android:textColor="#4C4B4B"/>
+			</LinearLayout>
+
+		</RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center_horizontal"
+	android:orientation="vertical"
+	tools:context=".activity.ViewPagerActivity">
+
+	<androidx.viewpager2.widget.ViewPager2
+		android:id="@+id/viewpager2"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:overScrollMode="never"
+		android:layout_marginBottom="12dp"
+		android:layout_weight="1">
+
+	</androidx.viewpager2.widget.ViewPager2>
+<LinearLayout
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:id="@+id/viewpager_contaener"
+	android:gravity="center_horizontal"
+	android:orientation="horizontal"
+	/>
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+		android:id="@+id/btn_keyingi"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginBottom="20dp"
+		android:focusable="true"
+		android:tint="@color/purple_700"
+		android:layout_marginTop="20dp"
+		app:rippleColor="@color/black"
+		app:srcCompat="@drawable/ic_baseline_arrow_forward_ios_24"
+		app:backgroundTint="@color/white"
+		android:contentDescription="@string/dhoaidf" />
+
+</LinearLayout>

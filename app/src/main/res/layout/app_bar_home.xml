@@ -9,18 +9,28 @@
 	<com.google.android.material.appbar.AppBarLayout
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:theme="@style/Theme.13maktab.AppBarOverlay">
+		>
 
 		<androidx.appcompat.widget.Toolbar
 			android:id="@+id/toolbar"
 			android:layout_width="match_parent"
 			android:layout_height="?attr/actionBarSize"
-			android:background="@color/white"
-			app:popupTheme="@style/Theme.13maktab.PopupOverlay" />
+			app:title="13-maktab"
+			android:elevation="4dp"
+			android:background="#F7FDFCFC"
+			app:titleMarginStart="70dp"
+			app:titleTextColor="@color/black"
+			app:navigationIcon="@drawable/ic_baseline_menu_24"
+			>
+
+		</androidx.appcompat.widget.Toolbar>
 
 	</com.google.android.material.appbar.AppBarLayout>
 
-	<include layout="@layout/content_home" />
+	<include layout="@layout/content_home"
+		android:layout_marginTop="?attr/actionBarSize"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

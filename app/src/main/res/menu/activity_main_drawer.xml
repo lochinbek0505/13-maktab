@@ -9,28 +9,28 @@
 			android:icon="@drawable/ic_baseline_home_24"
 			android:title="@string/menu_home" />
 		<item
-			android:id="@+id/nav_gallery"
+			android:id="@+id/itemsFragment"
 			android:icon="@drawable/ic_baseline_menu_24"
 			android:title="@string/menu_gallery" />
 		<item
-			android:id="@+id/nav_slideshow"
+			android:id="@+id/yangiliklarFragment"
 			android:icon="@drawable/ic_baseline_language_24"
 			android:title="@string/menu_slideshow" />
 		<item
-			android:id="@+id/nav_build_location"
+			android:id="@+id/binolarFragment"
 			android:icon="@drawable/ic_baseline_location_on_24"
 			android:title="@string/bino_manzili" />
 		<item
 			android:id="@+id/nav_sotial_networkings"
-			android:icon="@drawable/ic_menu_slideshow"
+			android:icon="@drawable/ic_media_icon"
 			android:title="@string/ijtimoiy_tarmoqlar" />
 		<item
-			android:id="@+id/nav_connection"
-			android:icon="@drawable/ic_menu_slideshow"
+			android:id="@+id/aloqaFragment"
+			android:icon="@drawable/ic_connection_icon"
 			android:title="@string/bog_lanish" />
 
 		<item
-			android:id="@+id/nav_app_about"
+			android:id="@+id/aboutFragment"
 			android:icon="@drawable/ic_baseline_error_24"
 			android:title="@string/ilova_haqida" />
 		<item

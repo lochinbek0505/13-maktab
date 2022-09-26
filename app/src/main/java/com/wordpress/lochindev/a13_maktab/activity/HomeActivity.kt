@@ -2,6 +2,7 @@ package com.wordpress.lochindev.a13_maktab.activity
 
 import android.os.Bundle
 import android.view.Menu
+import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
@@ -13,6 +14,7 @@ import com.google.android.material.navigation.NavigationView
 import com.google.android.material.snackbar.Snackbar
 import com.wordpress.lochindev.a13_maktab.R
 import com.wordpress.lochindev.a13_maktab.databinding.ActivityHomeBinding
+import kotlinx.android.synthetic.main.content_home.*
 
 class HomeActivity : AppCompatActivity() {
 
@@ -26,8 +28,9 @@ class HomeActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setSupportActionBar(binding.appBarHome.toolbar)
-
-
+//        actionBarDrawaber
+//        supportActionBar!!.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM)
+//        supportActionBar.customView(R.id.toolbar)
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_content_home)
@@ -35,13 +38,20 @@ class HomeActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow
+                R.id.nav_home,
+                R.id.yangiliklarFragment,
+                R.id.binolarFragment,
+                R.id.nav_sotial_networkings,
+                R.id.aloqaFragment,
+                R.id.aboutFragment,
+                R.id.nav_exit_app
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+//        setBottomBadges
+        bottomNavigation.setupWithNavController(navController)
     }
-
 
 
     override fun onSupportNavigateUp(): Boolean {

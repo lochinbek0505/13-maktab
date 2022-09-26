@@ -7,4 +7,9 @@
 	<color name="gray">#D7D8D8</color>
 	<color name="black">#FF000000</color>
 	<color name="white">#FFFFFFFF</color>
+	<color name="status">#F6F7FB</color>
+	<color name="text">#373737</color>
+	<color name="icon_color1">#616160</color>
+	<color name="icon_color2">#A4B1F4</color>
+
 </resources>

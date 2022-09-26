@@ -4,7 +4,10 @@
 		<!-- Primary brand color. -->
 		<item name="colorPrimary">@color/purple_500</item>
 		<item name="colorPrimaryVariant">@color/purple_700</item>
-		<item name="colorOnPrimary">@color/white</item>
+		<item name="colorOnPrimary">@color/black</item>
+
+		<item name="android:statusBarColor">@color/status</item>
+		<item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
 		<!-- Secondary brand color. -->
 
 	</style>
@@ -14,7 +17,7 @@
 		<item name="windowNoTitle">true</item>
 	</style>
 
-	<style name="Theme.13maktab.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+	<style name="Theme.13maktab.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-	<style name="Theme.13maktab.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+	<style name="Theme.13maktab.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark" />
 </resources>

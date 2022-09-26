@@ -11,7 +11,7 @@
 	<string name="nav_header_desc">Navigation header</string>
 	<string name="action_settings">Settings</string>
 
-	<string name="menu_home">Bosh menu</string>
+	<string name="menu_home">13-maktab</string>
 	<string name="menu_gallery">Bo\'limlar</string>
 	<string name="menu_slideshow">Maktab yangiliklari</string>
 	<string name="bino_manzili">Bino manzili</string>
@@ -19,4 +19,8 @@
 	<string name="ijtimoiy_tarmoqlar">Ijtimoiy tarmoqlar</string>
 	<string name="ilova_haqida">Ilova Haqida</string>
 	<string name="ilovadan_chiqish">Ilovadan chiqish</string>
+	<string name="asosiy">Asosiy</string>
+	<string name="bolimlar">Bolimlar</string>
+	<string name="yangiliklar">Yangiliklar</string>
+	<string name="bino">Bino</string>
 </resources>

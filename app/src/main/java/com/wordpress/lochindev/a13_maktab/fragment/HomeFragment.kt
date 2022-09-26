@@ -1,33 +1,29 @@
 package com.wordpress.lochindev.a13_maktab.fragment
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.viewpager2.widget.ViewPager2
 import com.wordpress.lochindev.a13_maktab.R
+import com.wordpress.lochindev.a13_maktab.activity.MaktabActivity
+import com.wordpress.lochindev.a13_maktab.activity.OquvchilargaActivity
+import com.wordpress.lochindev.a13_maktab.activity.RahbariyatActivity
+import com.wordpress.lochindev.a13_maktab.activity.YutuqlarActivity
+import com.wordpress.lochindev.a13_maktab.adapter.ImageView_slayd_adapter
+import com.wordpress.lochindev.a13_maktab.adapter.NewsAdapter
+import com.wordpress.lochindev.a13_maktab.model.News_data
+import kotlinx.android.synthetic.main.fragment_home.*
+import kotlinx.android.synthetic.main.fragment_home.view.*
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [HomeFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class HomeFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
+    lateinit var items_data: ArrayList<News_data>
+    lateinit var items_adapter: NewsAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
+
     }
 
     override fun onCreateView(
@@ -35,26 +31,95 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        val view=inflater.inflate(R.layout.fragment_home, container, false)
+
+        val images= listOf(R.drawable.ic_corousel_image_1,R.drawable.ic_header2)
+        val adapter= ImageView_slayd_adapter(images)
+        view.galeriya.adapter=adapter
+
+        view.galeriya.registerOnPageChangeCallback(object: ViewPager2.OnPageChangeCallback(){
+            override fun onPageScrolled(
+                position: Int,
+                positionOffset: Float,
+                positionOffsetPixels: Int
+            ) {
+                super.onPageScrolled(position, positionOffset, positionOffsetPixels)
+            }
+
+            override fun onPageSelected(position: Int) {
+                super.onPageSelected(position)
+            }
+
+            override fun onPageScrollStateChanged(state: Int) {
+                super.onPageScrollStateChanged(state)
+            }
+
+        })
+        items_data = arrayListOf(
+            News_data(1, "Iltimos olib keting,Iltimos olib keting, Maktabga kitob keldi, Maktabga kitob keldi,Maktab",""),
+            News_data(2, "Iltimos olib keting,Iltimos olib keting, Maktabga kitob keldi, Maktabga kitob keldi,Raxbariyat",""),
+            News_data(3, "Iltimos olib keting,Iltimos olib keting, Maktabga kitob keldi, Maktabga kitob keldi,Yutuqlar",""),
+            News_data(4, "Iltimos olib keting,Iltimos olib keting, Maktabga kitob keldi, Maktabga kitob keldi,O'quvchilarga",""),
+            News_data(5, "Iltimos olib keting,Iltimos olib keting, Maktabga kitob keldi, Maktabga kitob keldi,O'quvchilarga","")
+
+        )
+        items_adapter= NewsAdapter(items_data,object:NewsAdapter.ItemSetOnClickListener{
+            override fun onClick(data: News_data) {
+                TODO("Not yet implemented")
+            }
+        })
+        view.news_recycyler.adapter=items_adapter
+
+        return view
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        home_maktab.setOnClickListener{
+            startActivity(Intent(requireActivity(),MaktabActivity::class.java))
+        }
+
+        home_rahbariyat.setOnClickListener{
+            startActivity(Intent(requireActivity(),RahbariyatActivity::class.java))
+        }
+
+        home_yutuqlar.setOnClickListener{
+            startActivity(Intent(requireActivity(),YutuqlarActivity::class.java))
+        }
+
+        home_oquvchilarga.setOnClickListener{
+            startActivity(Intent(requireActivity(),OquvchilargaActivity::class.java))
+        }
+
     }
 
     companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment HomeFragment.
-         */
-        // TODO: Rename and change types and number of parameters
+
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
             HomeFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
             }
     }
+
+
+
+
 }
+
+
+
+//        items_data = arrayListOf(
+//            Bolimlar_data(1, "Maktab"),
+//            Bolimlar_data(2, "Raxbariyat"),
+//            Bolimlar_data(3, "Yutuqlar"),
+//            Bolimlar_data(1, "O'quvchilarga")
+//        )
+//        items_adapter = BolimlarAdapter(items_data, object :BolimlarAdapter.ItemSetOnClickListener {
+//            override fun onClick(data: Bolimlar_data) {
+//                Toast.makeText(activity,data.name,Toast.LENGTH_LONG).show()
+//            }
+//
+//        })
+//
+//        view.bolimlar_recycler.adapter = items_adapter

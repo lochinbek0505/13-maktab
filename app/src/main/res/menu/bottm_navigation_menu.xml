@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	tools:showIn="navigation_view"
+	>
+
+		<item
+			android:id="@+id/nav_home"
+			android:icon="@drawable/ic_baseline_home_24"
+			android:title="@string/asosiy" />
+		<item
+			android:id="@+id/itemsFragment"
+			android:icon="@drawable/ic_baseline_format_list_bulleted_24"
+			android:title="@string/bolimlar" />
+		<item
+			android:id="@+id/yangiliklarFragment"
+			android:icon="@drawable/ic_news_24"
+			android:title="@string/yangiliklar" />
+		<item
+			android:id="@+id/binolarFragment"
+			android:icon="@drawable/ic_baseline_location_on_24"
+			android:title="@string/bino" />
+
+		<item
+			android:id="@+id/aloqaFragment"
+			android:icon="@drawable/ic_baseline_comment_24"
+			android:title="Aloqa"
+			/>
+
+
+</menu>

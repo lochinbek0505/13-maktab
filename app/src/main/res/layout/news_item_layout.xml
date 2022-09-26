@@ -2,43 +2,45 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
 	android:layout_height="180dp"
-	android:background="@color/gray"
 	android:layout_marginEnd="15dp"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	>
 
 	<RelativeLayout
+		android:id="@+id/news_item_layout"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		android:layout_marginTop="17dp"
-		android:background="@drawable/item_baground"
+		android:background="@drawable/item_baground1"
 		android:elevation="5dp"
 		android:focusable="true"
 		app:cardCornerRadius="20dp"
 		app:cardElevation="5dp">
 
 		<TextView
+			android:id="@+id/first_text"
 			android:layout_width="wrap_content"
 			android:layout_height="60dp"
-			android:layout_centerHorizontal="true"
 			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true"
 			android:layout_marginStart="20dp"
+			android:layout_marginTop="15dp"
 			android:layout_marginEnd="30dp"
 			android:maxLines="2"
-			android:layout_marginTop="15dp"
-			android:textStyle="bold"
 			android:text="Eng so'ngi yangilik:"
 			android:textColor="@color/white"
-			android:textSize="20sp" />
+			android:textSize="16sp"
+			android:textStyle="bold" />
 
 		<TextView
+			android:id="@+id/tv_item_news"
 			android:layout_width="wrap_content"
-			android:layout_height="60dp"
+			android:layout_height="70dp"
 			android:layout_centerInParent="true"
 			android:layout_marginStart="20dp"
 			android:layout_marginEnd="30dp"
-			android:maxLines="2"
 			android:ellipsize="end"
+			android:maxLines="3"
 			android:text="Iltimos olib keting, Maktabga kitob keldi,"
 			android:textColor="@color/white"
 			android:textSize="18sp" />
@@ -46,24 +48,26 @@
 		<LinearLayout
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:orientation="horizontal"
-			android:layout_alignParentBottom="true"
 			android:layout_alignParentEnd="true"
+			android:layout_alignParentBottom="true"
 			android:layout_margin="13dp"
-			android:gravity="center">
+			android:gravity="center"
+			android:orientation="horizontal">
+
 			<ImageView
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:src="@drawable/ic_baseline_access_time_24"/>
+				android:src="@drawable/ic_baseline_access_time_24" />
+
 			<TextView
+				android:id="@+id/tv_item_data"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:text="9.16.2022 9:00"
 				android:layout_marginStart="5dp"
 				android:layout_marginEnd="10dp"
-				android:textSize="17sp"
-				android:textStyle="bold"
-				android:textColor="@color/white"/>
+				android:text="9.16.2022 9:00"
+				android:textColor="@color/white"
+				android:textSize="15sp" />
 		</LinearLayout>
 
 	</RelativeLayout>

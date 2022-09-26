@@ -7,19 +7,34 @@
 
 	<fragment
 		android:id="@+id/nav_home"
-		android:name="com.wordpress.lochindev.a13_maktab.activity.ui.home.HomeFragment"
+		android:name="com.wordpress.lochindev.a13_maktab.fragment.HomeFragment"
 		android:label="@string/menu_home"
 		tools:layout="@layout/fragment_home" />
 
-	<fragment
-		android:id="@+id/nav_gallery"
-		android:name="com.wordpress.lochindev.a13_maktab.activity.ui.gallery.GalleryFragment"
-		android:label="@string/menu_gallery"
-		tools:layout="@layout/fragment_gallery" />
 
 	<fragment
-		android:id="@+id/nav_slideshow"
-		android:name="com.wordpress.lochindev.a13_maktab.activity.ui.slideshow.SlideshowFragment"
-		android:label="@string/menu_slideshow"
-		tools:layout="@layout/fragment_slideshow" />
+		android:id="@+id/aboutFragment"
+		android:name="com.wordpress.lochindev.a13_maktab.fragment.AboutFragment"
+		android:label="Dastur haqida"
+		tools:layout="@layout/fragment_about" />
+	<fragment
+		android:id="@+id/aloqaFragment"
+		android:name="com.wordpress.lochindev.a13_maktab.fragment.AloqaFragment"
+		android:label="Bog'lanish"
+		tools:layout="@layout/fragment_aloqa" />
+	<fragment
+		android:id="@+id/binolarFragment"
+		android:name="com.wordpress.lochindev.a13_maktab.fragment.BinolarFragment"
+		android:label="Bino manzili"
+		tools:layout="@layout/fragment_binolar" />
+	<fragment
+		android:id="@+id/itemsFragment"
+		android:name="com.wordpress.lochindev.a13_maktab.fragment.ItemsFragment"
+		android:label="Bo'limlar"
+		tools:layout="@layout/fragment_items" />
+	<fragment
+		android:id="@+id/yangiliklarFragment"
+		android:name="com.wordpress.lochindev.a13_maktab.fragment.YangiliklarFragment"
+		android:label="Yangiliklar"
+		tools:layout="@layout/fragment_yangiliklar" />
 </navigation>

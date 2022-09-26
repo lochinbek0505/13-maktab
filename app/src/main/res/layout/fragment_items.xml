@@ -1,14 +1,226 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:background="#F6F7FB"
 	tools:context=".fragment.ItemsFragment">
 
-	<!-- TODO: Update blank fragment layout -->
-	<TextView
-		android:layout_width="match_parent"
-		android:layout_height="match_parent"
-		android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+	<TextView
+		android:id="@+id/tv_items"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="15dp"
+		android:layout_marginStart="20dp"
+		android:layout_marginBottom="10dp"
+		android:textStyle="bold"
+		android:text="Barcha bo'limlar:"
+		android:textColor="@color/text"
+		android:textSize="20sp" />
+
+
+	<androidx.cardview.widget.CardView
+		android:layout_width="match_parent"
+		android:layout_height="70dp"
+		android:layout_marginStart="20dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginEnd="20dp"
+		android:layout_marginBottom="15dp"
+		android:background="@color/white"
+		app:cardCornerRadius="15dp"
+		app:cardElevation="10dp">
+
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<ImageView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_alignParentStart="true"
+				android:layout_centerVertical="true"
+				android:layout_marginStart="15dp"
+				android:src="@drawable/ic_item_image" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:layout_centerVertical="true"
+				android:layout_marginStart="20dp"
+				android:text="Maktab"
+				android:textColor="@color/black"
+				android:textSize="22sp" />
+
+			<ImageView
+				android:layout_width="25dp"
+				android:layout_height="25dp"
+				android:layout_alignParentEnd="true"
+				android:layout_centerVertical="true"
+				android:layout_marginEnd="20dp"
+				android:src="@drawable/ic_baseline_arrow_forward" />
+
+		</RelativeLayout>
+
+
+	</androidx.cardview.widget.CardView>
+
+	<androidx.cardview.widget.CardView
+		android:layout_width="match_parent"
+		android:layout_height="70dp"
+		android:layout_marginStart="20dp"
+		android:layout_marginEnd="20dp"
+		android:layout_marginBottom="15dp"
+		android:background="@color/white"
+		app:cardCornerRadius="15dp"
+		app:cardElevation="10dp">
+
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<ImageView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_alignParentStart="true"
+				android:layout_centerVertical="true"
+				android:layout_marginStart="15dp"
+				android:src="@drawable/ic_item_image" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:layout_centerVertical="true"
+				android:layout_marginStart="20dp"
+				android:text="Rahbariyat"
+				android:textColor="@color/black"
+				android:textSize="22sp" />
+
+			<ImageView
+				android:layout_width="25dp"
+				android:layout_height="25dp"
+				android:layout_alignParentEnd="true"
+				android:layout_centerVertical="true"
+				android:layout_marginEnd="20dp"
+				android:src="@drawable/ic_baseline_arrow_forward" />
+
+		</RelativeLayout>
+
+
+	</androidx.cardview.widget.CardView>
+
+	<androidx.cardview.widget.CardView
+		android:layout_width="match_parent"
+		android:layout_height="70dp"
+		android:layout_marginStart="20dp"
+		android:layout_marginEnd="20dp"
+		android:layout_marginBottom="15dp"
+		android:background="@color/white"
+		app:cardCornerRadius="15dp"
+		app:cardElevation="10dp">
+
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<ImageView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_alignParentStart="true"
+				android:layout_centerVertical="true"
+				android:layout_marginStart="15dp"
+				android:src="@drawable/ic_item_image" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:layout_centerVertical="true"
+				android:layout_marginStart="20dp"
+				android:text="Yutuqlar"
+				android:textColor="@color/black"
+				android:textSize="22sp" />
+
+			<ImageView
+				android:layout_width="25dp"
+				android:layout_height="25dp"
+				android:layout_alignParentEnd="true"
+				android:layout_centerVertical="true"
+				android:layout_marginEnd="20dp"
+				android:src="@drawable/ic_baseline_arrow_forward" />
+
+		</RelativeLayout>
+
+
+	</androidx.cardview.widget.CardView>
+
+	<androidx.cardview.widget.CardView
+		android:layout_width="match_parent"
+		android:layout_height="70dp"
+		android:layout_marginStart="20dp"
+		android:layout_marginEnd="20dp"
+		android:layout_marginBottom="10dp"
+		android:background="@color/white"
+		app:cardCornerRadius="15dp"
+		app:cardElevation="10dp">
+
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<ImageView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_alignParentStart="true"
+				android:layout_centerVertical="true"
+				android:layout_marginStart="15dp"
+				android:src="@drawable/ic_item_image" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:layout_centerVertical="true"
+				android:layout_marginStart="20dp"
+				android:text="O'quvchilarga"
+				android:textColor="@color/black"
+				android:textSize="22sp" />
+
+			<ImageView
+				android:layout_width="25dp"
+				android:layout_height="25dp"
+				android:layout_alignParentEnd="true"
+				android:layout_centerVertical="true"
+				android:layout_marginEnd="20dp"
+				android:src="@drawable/ic_baseline_arrow_forward" />
+
+		</RelativeLayout>
+
+
+	</androidx.cardview.widget.CardView>
+<!--	<androidx.recyclerview.widget.RecyclerView-->
+<!--		android:id="@+id/items_recycyler"-->
+<!--		android:layout_width="match_parent"-->
+<!--		android:layout_height="match_parent"-->
+<!--		android:layout_margin="10dp"-->
+<!--		app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+<!--		tools:listitem="@layout/items_layout" />-->
+
+
+</LinearLayout>

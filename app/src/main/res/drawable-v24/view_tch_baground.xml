@@ -8,9 +8,9 @@
 		android:bottomLeftRadius="15dp"
 		android:bottomRightRadius="15dp"/>
 	<gradient
-		android:centerColor="@color/purple_500"
-		android:startColor="@color/purple_700"
-		android:endColor="#9286AC"/>
+		android:centerColor="#9D7BCD"
+		android:startColor="#865AE9"
+		android:endColor="@color/white"/>
 
 
 </shape>

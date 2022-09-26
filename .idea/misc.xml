@@ -12,37 +12,52 @@
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/drawable/ic_baseline_arrow_forward_ios_24.xml" value="0.166" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/drawable/ic_baseline_exit_to_app_24.xml" value="0.1665" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/drawable/ic_baseline_language_24.xml" value="0.166" />
+        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/drawable/ic_baseline_local_phone_24.xml" value="0.141" />
+        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/drawable/ic_baseline_location_on_24.xml" value="0.198" />
+        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/drawable/ic_baseline_mail_24.xml" value="0.141" />
+        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/drawable/ic_baseline_map_24.xml" value="0.141" />
+        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/drawable/ic_baseline_mark_email_read_24.xml" value="0.141" />
+        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/drawable/ic_baseline_phone_forwarded_24.xml" value="0.141" />
+        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/drawable/ic_news_24.xml" value="0.174" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/drawable/indikator_active.xml" value="0.166" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/drawable/indikator_inactive.xml" value="0.166" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/drawable/item_baground.xml" value="0.166" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/drawable/view_bch_baground.xml" value="0.1665" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/drawable/view_bt_baground.xml" value="0.1665" />
-        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/activity_home.xml" value="0.33" />
+        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/activity_maktab.xml" value="0.25" />
+        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/activity_oquvchilarga.xml" value="0.20416666666666666" />
+        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/activity_rahbariyat.xml" value="0.25" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/activity_splash.xml" value="0.19010416666666666" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/activity_view_pager.xml" value="0.22" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/activity_welcome.xml" value="0.20416666666666666" />
-        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/app_bar_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/activity_yutuqlar.xml" value="0.20416666666666666" />
+        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/app_bar_home.xml" value="0.33" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/big_item_layout.xml" value="0.33" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/book_item_layout.xml" value="0.20416666666666666" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/class_item_layout.xml" value="0.20416666666666666" />
-        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/content_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/content_home.xml" value="0.25" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/fragment_about.xml" value="0.20416666666666666" />
-        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/fragment_aloqa.xml" value="0.25" />
+        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/fragment_aloqa.xml" value="0.33" />
+        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/fragment_binolar.xml" value="0.20416666666666666" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/fragment_gallery.xml" value="0.20416666666666666" />
-        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/fragment_home.xml" value="0.33" />
-        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/fragment_items.xml" value="0.20416666666666666" />
+        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/fragment_home.xml" value="0.266199649737303" />
+        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/fragment_items.xml" value="0.22" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/fragment_slideshow.xml" value="0.20416666666666666" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/fragment_welcome.xml" value="0.16" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/fragment_yangiliklar.xml" value="0.20416666666666666" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/information_viewpager_layout.xml" value="0.22" />
-        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/items_layout.xml" value="0.2" />
+        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/items_layout.xml" value="0.33" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/location_viewpager_layout.xml" value="0.20416666666666666" />
-        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/nav_header_home.xml" value="0.33" />
+        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/nav_header_home.xml" value="0.2" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/news_item.xml" value="0.20416666666666666" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/news_item_layout.xml" value="0.25" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/news_viewpager_layout.xml" value="0.15" />
+        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/toolbar.xml" value="0.1675213675213675" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/viewpager1_layout.xml" value="0.20416666666666666" />
-        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/menu/activity_main_drawer.xml" value="0.18" />
+        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/menu/activity_main_drawer.xml" value="0.33" />
+        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/menu/bottm_navigation_menu.xml" value="0.20416666666666666" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/menu/home.xml" value="0.20416666666666666" />
       </map>
     </option>

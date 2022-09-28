@@ -8,10 +8,8 @@
 	<fragment
 		android:id="@+id/nav_home"
 		android:name="com.wordpress.lochindev.a13_maktab.fragment.HomeFragment"
-		android:label="@string/menu_home"
+		android:label="13-maktab"
 		tools:layout="@layout/fragment_home" />
-
-
 	<fragment
 		android:id="@+id/aboutFragment"
 		android:name="com.wordpress.lochindev.a13_maktab.fragment.AboutFragment"

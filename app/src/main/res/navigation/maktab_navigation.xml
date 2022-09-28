@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/maktab_navigation"
+	app:startDestination="@id/maktabHomeFragment">
+	<fragment
+		android:id="@+id/maktabHomeFragment"
+		android:name="com.wordpress.lochindev.a13_maktab.fragment.MaktabHomeFragment"
+		android:label="fragment_maktab_home"
+		tools:layout="@layout/fragment_maktab_home" >
+		<action
+			android:id="@+id/action_maktabHomeFragment_to_maktabHaqidaFragment"
+			app:destination="@id/maktabHaqidaFragment" />
+		<action
+			android:id="@+id/action_maktabHomeFragment_to_hujjatlarFragment"
+			app:destination="@id/hujjatlarFragment" />
+	</fragment>
+	<fragment
+		android:id="@+id/maktabHaqidaFragment"
+		android:name="com.wordpress.lochindev.a13_maktab.fragment.MaktabHaqidaFragment"
+		android:label="fragment_maktab_haqida"
+		tools:layout="@layout/fragment_maktab_haqida" />
+	<fragment
+		android:id="@+id/hujjatlarFragment"
+		android:name="com.wordpress.lochindev.a13_maktab.fragment.HujjatlarFragment"
+		android:label="fragment_hujjatlar"
+		tools:layout="@layout/fragment_hujjatlar" />
+
+</navigation>

@@ -24,7 +24,7 @@
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/drawable/item_baground.xml" value="0.166" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/drawable/view_bch_baground.xml" value="0.1665" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/drawable/view_bt_baground.xml" value="0.1665" />
-        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/activity_home.xml" value="0.33" />
+        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/activity_home.xml" value="0.2" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/activity_maktab.xml" value="0.25" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/activity_oquvchilarga.xml" value="0.20416666666666666" />
@@ -43,7 +43,10 @@
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/fragment_binolar.xml" value="0.20416666666666666" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/fragment_gallery.xml" value="0.20416666666666666" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/fragment_home.xml" value="0.266199649737303" />
+        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/fragment_hujjatlar.xml" value="0.20416666666666666" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/fragment_items.xml" value="0.22" />
+        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/fragment_maktab_haqida.xml" value="0.33" />
+        <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/fragment_maktab_home.xml" value="0.20416666666666666" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/fragment_slideshow.xml" value="0.20416666666666666" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/fragment_welcome.xml" value="0.16" />
         <entry key="..\:/DASTURLARIM/13maktab/app/src/main/res/layout/fragment_yangiliklar.xml" value="0.20416666666666666" />

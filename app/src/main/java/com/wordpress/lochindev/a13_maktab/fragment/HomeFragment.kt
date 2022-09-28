@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
 import com.wordpress.lochindev.a13_maktab.R
@@ -21,10 +22,6 @@ import kotlinx.android.synthetic.main.fragment_home.view.*
 class HomeFragment : Fragment() {
     lateinit var items_data: ArrayList<News_data>
     lateinit var items_adapter: NewsAdapter
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -38,21 +35,8 @@ class HomeFragment : Fragment() {
         view.galeriya.adapter=adapter
 
         view.galeriya.registerOnPageChangeCallback(object: ViewPager2.OnPageChangeCallback(){
-            override fun onPageScrolled(
-                position: Int,
-                positionOffset: Float,
-                positionOffsetPixels: Int
-            ) {
-                super.onPageScrolled(position, positionOffset, positionOffsetPixels)
-            }
 
-            override fun onPageSelected(position: Int) {
-                super.onPageSelected(position)
-            }
 
-            override fun onPageScrollStateChanged(state: Int) {
-                super.onPageScrollStateChanged(state)
-            }
 
         })
         items_data = arrayListOf(
@@ -65,7 +49,7 @@ class HomeFragment : Fragment() {
         )
         items_adapter= NewsAdapter(items_data,object:NewsAdapter.ItemSetOnClickListener{
             override fun onClick(data: News_data) {
-                TODO("Not yet implemented")
+                Toast.makeText(requireActivity(),data.name,Toast.LENGTH_LONG).show()
             }
         })
         view.news_recycyler.adapter=items_adapter

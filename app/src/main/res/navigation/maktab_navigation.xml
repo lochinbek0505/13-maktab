@@ -15,6 +15,9 @@
 		<action
 			android:id="@+id/action_maktabHomeFragment_to_hujjatlarFragment"
 			app:destination="@id/hujjatlarFragment" />
+		<action
+			android:id="@+id/yangiliklar2"
+			app:destination="@id/yangiliklarFragment2" />
 	</fragment>
 	<fragment
 		android:id="@+id/maktabHaqidaFragment"
@@ -26,5 +29,10 @@
 		android:name="com.wordpress.lochindev.a13_maktab.fragment.HujjatlarFragment"
 		android:label="fragment_hujjatlar"
 		tools:layout="@layout/fragment_hujjatlar" />
+	<fragment
+		android:id="@+id/yangiliklarFragment2"
+		android:name="com.wordpress.lochindev.a13_maktab.fragment.YangiliklarFragment"
+		android:label="fragment_yangiliklar"
+		tools:layout="@layout/fragment_yangiliklar" />
 
 </navigation>

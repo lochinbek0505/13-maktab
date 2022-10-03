@@ -37,7 +37,10 @@ class ViewPagerActivity : AppCompatActivity() {
             }
 
         })
-
+        vp_skip.setOnClickListener {
+            startActivity(Intent(this, WelcomeActivity::class.java))
+            finish()
+        }
         btn_keyingi.setOnClickListener{
 
             if(viewpager2.currentItem + 1 < viewPagerAdapter.itemCount){

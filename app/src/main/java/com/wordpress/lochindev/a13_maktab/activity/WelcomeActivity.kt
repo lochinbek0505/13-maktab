@@ -13,7 +13,7 @@ class WelcomeActivity : AppCompatActivity() {
 
 
         btn_boshlash.setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, HomeActivity::class.java))
             finish()
         }
     }

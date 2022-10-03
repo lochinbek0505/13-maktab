@@ -24,7 +24,7 @@ class SplashActivity : AppCompatActivity() {
         }
         Handler().postDelayed(Runnable {
 
-            startActivity(Intent(this, HomeActivity::class.java))
+            startActivity(Intent(this, ViewPagerActivity::class.java))
             finish()
 
         }, 2000)

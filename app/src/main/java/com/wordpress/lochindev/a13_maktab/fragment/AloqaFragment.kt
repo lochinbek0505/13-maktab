@@ -35,7 +35,7 @@ class AloqaFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         aloqa_call.setOnClickListener {
             val intent=Intent(Intent.ACTION_DIAL)
-            intent.data=Uri.parse("tel:"+"+9989317980154")
+            intent.data=Uri.parse("tel:"+"+998939903006")
             startActivity(intent)
 //            if (ActivityCompat.checkSelfPermission(requireActivity(),android.Manifest.permission.CALL_PHONE)!=PackageManager.PERMISSION_GRANTED)
         }
@@ -43,7 +43,7 @@ class AloqaFragment : Fragment() {
         aloqa_mail.setOnClickListener {
             val intent=Intent(Intent.ACTION_SEND)
             intent.data=Uri.parse("Email")
-            val aa = arrayOf("asdfg@gmail.com","askdfg@gmail.com")
+            val aa = arrayOf("urol1980@gmail.com","lbek458@gmail.com")
             intent.putExtra(Intent.EXTRA_EMAIL,aa)
             intent.putExtra(Intent.EXTRA_SUBJECT,"Assalomu Alaykum 13-maktab rahbariyati")
             intent.putExtra(Intent.EXTRA_TEXT,"Sizlarga kattakon rahmat. Hozir men ilova orqali bu elektron pochtaga yetib keldim")

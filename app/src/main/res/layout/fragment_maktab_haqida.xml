@@ -1,33 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:background="#F6F7FB"
+	android:orientation="vertical"
 	tools:context=".fragment.MaktabHaqidaFragment">
 
-<ScrollView
-	android:layout_height="match_parent"
-	android:layout_width="match_parent"
-	android:scrollbars="none">
-	<LinearLayout
+	<RelativeLayout
 		android:layout_width="match_parent"
-		android:layout_height="match_parent"
-		android:orientation="vertical">
+		android:layout_height="?attr/actionBarSize"
+		android:background="@color/white"
+		android:elevation="4dp">
 
-	<ImageView
-		android:layout_width="match_parent"
-		android:layout_height="200dp"
-		android:layout_margin="10dp"
-		android:src="@drawable/ic_for_aloqa"
-		android:scaleType="fitXY"/>
-	<TextView
+		<ImageView
+			android:id="@+id/maktab_back"
+			android:layout_width="24dp"
+			android:layout_height="24dp"
+			android:layout_alignParentStart="true"
+			android:layout_centerVertical="true"
+			android:layout_marginStart="20dp"
+			android:src="@drawable/ic_baseline_arrow_back_24" />
+
+		<TextView
+			android:id="@+id/tv_toolbar_maktab"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:text="Maktab haqida"
+			android:textColor="@color/black"
+			android:textSize="22sp" />
+	</RelativeLayout>
+
+	<ScrollView
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:layout_margin="10dp"
-		android:textColor="@color/text"
-		android:textSize="18sp"
-		android:text="@string/maktab_haqida" />
-	</LinearLayout>
-</ScrollView>
-</FrameLayout>
+		android:scrollbars="none">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="200dp"
+				android:layout_margin="10dp"
+				android:scaleType="fitXY"
+				android:src="@drawable/ic_for_aloqa" />
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_margin="10dp"
+				android:fontFamily="@font/intermedium"
+				android:text="@string/maktab_haqidaa"
+				android:textColor="#1A1A1B"
+				android:textSize="18sp" />
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>

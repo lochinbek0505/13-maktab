@@ -26,7 +26,7 @@ class MaktabHaqidaFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        tv_toolbar_maktab.text="Maktab haqida"
+//        tv_toolbar_maktab.text="Maktab haqida"
     }
     companion object {
 

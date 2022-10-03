@@ -59,7 +59,7 @@
 				android:layout_height="wrap_content"
 				android:layout_centerInParent="true"
 				android:layout_marginStart="85dp"
-				android:text="Samarqand viloyati, Qo'shrabot tumani, Qiyqim QFY , 234-uy."
+				android:text="Samarqand viloyati, Qo'shrabot tumani, Qiyqim QFY , 60-uy."
 				android:textColor="@color/text"
 				android:textSize="14sp"
 				/>
@@ -113,7 +113,7 @@
 				android:layout_height="wrap_content"
 				android:layout_centerVertical="true"
 				android:layout_marginStart="50dp"
-				android:text="+998 (88) 124 56 78"
+				android:text="+998 (93) 990 30 06"
 				android:textColor="@color/text"
 				android:textSize="16sp" />
 
@@ -166,7 +166,7 @@
 				android:layout_height="wrap_content"
 				android:layout_centerVertical="true"
 				android:layout_marginStart="50dp"
-				android:text="qoshrabot13@gmail.com"
+				android:text="urol1980@gmail.com"
 				android:textColor="@color/text"
 				android:textSize="16sp" />
 

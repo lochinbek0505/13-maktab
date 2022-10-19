@@ -2,8 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
 	package="com.wordpress.lochindev.a13_maktab">
-<uses-permission android:name="android.permission.CALL_PHONE"/>
+
+	<uses-permission android:name="android.permission.CALL_PHONE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+
 	<application
+		android:name=".MyApp"
 		android:allowBackup="true"
 		android:dataExtractionRules="@xml/data_extraction_rules"
 		android:fullBackupContent="@xml/backup_rules"
@@ -12,29 +16,36 @@
 		android:roundIcon="@mipmap/ic_launcher_round"
 		android:supportsRtl="true"
 		android:theme="@style/Theme.13maktab"
+		android:usesCleartextTraffic="true"
 		tools:targetApi="31">
+
 		<activity
-			android:name=".activity.OquvchilargaActivity"
+			android:name="com.wordpress.lochindev.a13_maktab.screen.activity.MediaActivity"
+			android:exported="false"
+			android:label="@string/title_activity_media"
+			android:theme="@style/Theme.13maktab.NoActionBar" />
+		<activity
+			android:name="com.wordpress.lochindev.a13_maktab.screen.activity.OquvchilargaActivity"
 			android:exported="false" />
 		<activity
-			android:name=".activity.YutuqlarActivity"
+			android:name="com.wordpress.lochindev.a13_maktab.screen.activity.YutuqlarActivity"
 			android:exported="false" />
 		<activity
-			android:name=".activity.RahbariyatActivity"
+			android:name="com.wordpress.lochindev.a13_maktab.screen.activity.RahbariyatActivity"
 			android:exported="false" />
 		<activity
-			android:name=".activity.MaktabActivity"
+			android:name="com.wordpress.lochindev.a13_maktab.screen.activity.MaktabActivity"
 			android:exported="false" />
 		<activity
-			android:name=".activity.HomeActivity"
+			android:name="com.wordpress.lochindev.a13_maktab.screen.activity.HomeActivity"
 			android:exported="false"
 			android:label="@string/title_activity_home"
 			android:theme="@style/Theme.13maktab.NoActionBar" />
 		<activity
-			android:name=".activity.WelcomeActivity"
+			android:name="com.wordpress.lochindev.a13_maktab.screen.activity.WelcomeActivity"
 			android:exported="false" />
 		<activity
-			android:name=".activity.SplashActivity"
+			android:name="com.wordpress.lochindev.a13_maktab.screen.activity.SplashActivity"
 			android:exported="true"
 			android:screenOrientation="portrait">
 			<intent-filter>
@@ -44,10 +55,10 @@
 			</intent-filter>
 		</activity>
 		<activity
-			android:name=".activity.ViewPagerActivity"
+			android:name="com.wordpress.lochindev.a13_maktab.screen.activity.ViewPagerActivity"
 			android:exported="false" />
 		<activity
-			android:name=".activity.MainActivity"
+			android:name="com.wordpress.lochindev.a13_maktab.screen.activity.MainActivity"
 			android:exported="false" />
 	</application>
 

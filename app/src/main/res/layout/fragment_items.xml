@@ -6,7 +6,7 @@
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	android:orientation="vertical"
 	android:background="#F6F7FB"
-	tools:context=".fragment.ItemsFragment">
+	tools:context=".screen.fragment.ItemsFragment">
 
 
 	<TextView
@@ -28,6 +28,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		android:layout_margin="10dp"
+		android:layoutAnimation="@anim/layout_animation"
 		app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
 		/>
 

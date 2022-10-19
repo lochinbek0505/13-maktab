@@ -6,7 +6,7 @@
 	android:layout_height="match_parent"
 	android:orientation="vertical"
 	android:background="#F7FDFCFC"
-	tools:context=".activity.MaktabActivity">
+	tools:context=".screen.activity.MaktabActivity">
 
 	<fragment
 		android:id="@+id/nav_host_fragment_maktab"

@@ -6,7 +6,7 @@
 	android:layout_height="match_parent"
 	android:orientation="vertical"
 	android:background="#F7FDFCFC"
-	tools:context=".activity.RahbariyatActivity">
+	tools:context=".screen.activity.RahbariyatActivity">
 	<RelativeLayout
 		android:layout_width="match_parent"
 		android:layout_height="?attr/actionBarSize"

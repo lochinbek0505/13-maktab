@@ -6,8 +6,8 @@
 	app:startDestination="@id/maktabHomeFragment">
 	<fragment
 		android:id="@+id/maktabHomeFragment"
-		android:name="com.wordpress.lochindev.a13_maktab.fragment.MaktabHomeFragment"
-		android:label="fragment_maktab_home"
+		android:name="com.wordpress.lochindev.a13_maktab.screen.fragment.MaktabHomeFragment"
+		android:label="Maktab"
 		tools:layout="@layout/fragment_maktab_home" >
 		<action
 			android:id="@+id/action_maktabHomeFragment_to_maktabHaqidaFragment"
@@ -21,18 +21,26 @@
 	</fragment>
 	<fragment
 		android:id="@+id/maktabHaqidaFragment"
-		android:name="com.wordpress.lochindev.a13_maktab.fragment.MaktabHaqidaFragment"
-		android:label="fragment_maktab_haqida"
-		tools:layout="@layout/fragment_maktab_haqida" />
+		android:name="com.wordpress.lochindev.a13_maktab.screen.fragment.MaktabHaqidaFragment"
+		android:label="Maktab haqida"
+		tools:layout="@layout/fragment_maktab_haqida" >
+		<action
+			android:id="@+id/action_maktabHaqidaFragment_to_maktabHomeFragment"
+			app:destination="@id/maktabHomeFragment" />
+	</fragment>
 	<fragment
 		android:id="@+id/hujjatlarFragment"
-		android:name="com.wordpress.lochindev.a13_maktab.fragment.HujjatlarFragment"
-		android:label="fragment_hujjatlar"
-		tools:layout="@layout/fragment_hujjatlar" />
+		android:name="com.wordpress.lochindev.a13_maktab.screen.fragment.HujjatlarFragment"
+		android:label="Hujjatlar"
+		tools:layout="@layout/fragment_hujjatlar" >
+		<action
+			android:id="@+id/action_hujjatlarFragment_to_maktabHomeFragment"
+			app:destination="@id/maktabHomeFragment" />
+	</fragment>
 	<fragment
 		android:id="@+id/yangiliklarFragment2"
-		android:name="com.wordpress.lochindev.a13_maktab.fragment.YangiliklarFragment"
-		android:label="fragment_yangiliklar"
+		android:name="com.wordpress.lochindev.a13_maktab.screen.fragment.YangiliklarFragment"
+		android:label="Yangiliklar"
 		tools:layout="@layout/fragment_yangiliklar" />
 
 </navigation>

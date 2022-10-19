@@ -6,7 +6,7 @@
 	android:layout_height="match_parent"
 	android:background="#F6F7FB"
 	android:orientation="vertical"
-	tools:context=".fragment.AloqaFragment">
+	tools:context=".screen.fragment.AloqaFragment">
 
 	<androidx.cardview.widget.CardView
 		android:layout_width="match_parent"
@@ -61,8 +61,7 @@
 				android:layout_marginStart="85dp"
 				android:text="Samarqand viloyati, Qo'shrabot tumani, Qiyqim QFY , 60-uy."
 				android:textColor="@color/text"
-				android:textSize="14sp"
-				/>
+				android:textSize="14sp" />
 
 			<ImageView
 				android:layout_width="27dp"

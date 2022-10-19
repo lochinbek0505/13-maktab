@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "92432806451",
+    "project_id": "maktab-3b7d3",
+    "storage_bucket": "maktab-3b7d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:92432806451:android:e23d9c766e4e3312ad6946",
+        "android_client_info": {
+          "package_name": "com.wordpress.lochindev.a13_maktab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "92432806451-64utlmfgab26gn2p6hgvut23pt8fq361.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCX-k7gZRPdxh4b1FgEvO-6aEOURpTRcHY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "92432806451-64utlmfgab26gn2p6hgvut23pt8fq361.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -19,35 +19,35 @@
 		android:usesCleartextTraffic="true"
 		tools:targetApi="31">
 		<activity
-			android:name=".RahbariyatScreenActivity"
+			android:name=".screen.activity.RahbariyatScreenActivity"
 			android:exported="false" />
 		<activity
-			android:name=".MediaActivity"
+			android:name=".screen.activity.MediaActivity"
 			android:exported="false"
 			android:label="@string/title_activity_media"
 			android:theme="@style/Theme.13maktab.NoActionBar" />
 		<activity
-			android:name=".OquvchilargaActivity"
+			android:name=".screen.activity.OquvchilargaActivity"
 			android:exported="false" />
 		<activity
-			android:name=".YutuqlarActivity"
+			android:name=".screen.activity.YutuqlarActivity"
 			android:exported="false" />
 		<activity
-			android:name=".RahbariyatActivity"
+			android:name=".screen.activity.RahbariyatActivity"
 			android:exported="false" />
 		<activity
-			android:name=".MaktabActivity"
+			android:name=".screen.activity.MaktabActivity"
 			android:exported="false" />
 		<activity
-			android:name=".HomeActivity"
+			android:name=".screen.activity.HomeActivity"
 			android:exported="false"
 			android:label="@string/title_activity_home"
 			android:theme="@style/Theme.13maktab.NoActionBar" />
 		<activity
-			android:name=".WelcomeActivity"
+			android:name=".screen.activity.WelcomeActivity"
 			android:exported="false" />
 		<activity
-			android:name=".SplashActivity"
+			android:name=".screen.activity.SplashActivity"
 			android:exported="true"
 			android:screenOrientation="portrait">
 			<intent-filter>
@@ -57,10 +57,10 @@
 			</intent-filter>
 		</activity>
 		<activity
-			android:name=".ViewPagerActivity"
+			android:name=".screen.activity.ViewPagerActivity"
 			android:exported="false" />
 		<activity
-			android:name=".MainActivity"
+			android:name=".screen.activity.MainActivity"
 			android:exported="false" />
 	</application>
 

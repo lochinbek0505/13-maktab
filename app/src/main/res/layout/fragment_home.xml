@@ -512,6 +512,7 @@ ehtiyot choralarini ko'ring"
 						android:layout_height="190dp"
 						android:layout_alignParentTop="true"
 						android:layout_alignParentEnd="true"
+						android:layout_marginEnd="-20dp"
 						android:background="@drawable/ic_statistika"
 						android:gravity="center"
 						android:orientation="vertical">
@@ -846,7 +847,7 @@ ehtiyot choralarini ko'ring"
 						android:layout_marginTop="10dp"
 						android:text="Google xaritadan batafsil tanishish"
 						android:textColor="@color/black"
-						android:textSize="16sp" />
+						android:textSize="14sp" />
 				</LinearLayout>
 
 			</androidx.cardview.widget.CardView>
@@ -876,6 +877,7 @@ ehtiyot choralarini ko'ring"
 						android:layout_height="wrap_content"
 						android:text="Biz sizga keng imkoniyat yaratib berganimiz uchun xursandmiz"
 						android:textColor="#0B36CF"
+						android:maxLines="2"
 						android:textSize="14sp" />
 				</LinearLayout>
 			</androidx.cardview.widget.CardView>

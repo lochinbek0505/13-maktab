@@ -38,20 +38,11 @@ class MediaActivity : AppCompatActivity() {
 
                 viewmodel.news.observe(this,{
 
-                    news_list=it
+                   load(it)
 
                 })
 
 
-                val adapter=MediaAdapter(news_list,object:MediaAdapter.ItemSetOnClickListener{
-                    override fun onClick(data: media_data) {
-
-                        Toast.makeText(this@MediaActivity,data.toString(),Toast.LENGTH_LONG).show()
-
-                    }
-
-                })
-                binding.rvMedia.adapter=adapter
 
 
 
@@ -63,6 +54,20 @@ class MediaActivity : AppCompatActivity() {
 
 
 
+
+
+    }
+
+    fun load(array:ArrayList<media_data>){
+        val adapter=MediaAdapter(array,object:MediaAdapter.ItemSetOnClickListener{
+            override fun onClick(data: media_data) {
+
+                Toast.makeText(this@MediaActivity,data.toString(),Toast.LENGTH_LONG).show()
+
+            }
+
+        })
+        binding.rvMedia.adapter=adapter
 
 
     }

@@ -18,34 +18,36 @@
 		android:theme="@style/Theme.13maktab"
 		android:usesCleartextTraffic="true"
 		tools:targetApi="31">
-
 		<activity
-			android:name="com.wordpress.lochindev.a13_maktab.screen.activity.MediaActivity"
+			android:name=".RahbariyatScreenActivity"
+			android:exported="false" />
+		<activity
+			android:name=".MediaActivity"
 			android:exported="false"
 			android:label="@string/title_activity_media"
 			android:theme="@style/Theme.13maktab.NoActionBar" />
 		<activity
-			android:name="com.wordpress.lochindev.a13_maktab.screen.activity.OquvchilargaActivity"
+			android:name=".OquvchilargaActivity"
 			android:exported="false" />
 		<activity
-			android:name="com.wordpress.lochindev.a13_maktab.screen.activity.YutuqlarActivity"
+			android:name=".YutuqlarActivity"
 			android:exported="false" />
 		<activity
-			android:name="com.wordpress.lochindev.a13_maktab.screen.activity.RahbariyatActivity"
+			android:name=".RahbariyatActivity"
 			android:exported="false" />
 		<activity
-			android:name="com.wordpress.lochindev.a13_maktab.screen.activity.MaktabActivity"
+			android:name=".MaktabActivity"
 			android:exported="false" />
 		<activity
-			android:name="com.wordpress.lochindev.a13_maktab.screen.activity.HomeActivity"
+			android:name=".HomeActivity"
 			android:exported="false"
 			android:label="@string/title_activity_home"
 			android:theme="@style/Theme.13maktab.NoActionBar" />
 		<activity
-			android:name="com.wordpress.lochindev.a13_maktab.screen.activity.WelcomeActivity"
+			android:name=".WelcomeActivity"
 			android:exported="false" />
 		<activity
-			android:name="com.wordpress.lochindev.a13_maktab.screen.activity.SplashActivity"
+			android:name=".SplashActivity"
 			android:exported="true"
 			android:screenOrientation="portrait">
 			<intent-filter>
@@ -55,10 +57,10 @@
 			</intent-filter>
 		</activity>
 		<activity
-			android:name="com.wordpress.lochindev.a13_maktab.screen.activity.ViewPagerActivity"
+			android:name=".ViewPagerActivity"
 			android:exported="false" />
 		<activity
-			android:name="com.wordpress.lochindev.a13_maktab.screen.activity.MainActivity"
+			android:name=".MainActivity"
 			android:exported="false" />
 	</application>
 

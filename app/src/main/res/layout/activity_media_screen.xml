@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:orientation="vertical"
-	android:background="@color/white"
-	tools:context=".screen.activity.YutuqlarActivity">
+	tools:context=".screen.activity.MediaScreenActivity">
 	<RelativeLayout
+		android:id="@+id/rl_mc"
 		android:layout_width="match_parent"
 		android:layout_height="?attr/actionBarSize"
 		android:layout_marginBottom="20dp"
 		android:elevation="4dp"
-		android:background="@color/white">
+		android:background="#F7FDFCFC">
 		<ImageView
-			android:id="@+id/tb_yutuqlar"
+			android:id="@+id/tb_meadia_screen"
 			android:layout_width="24dp"
 			android:layout_height="24dp"
 			android:layout_alignParentStart="true"
@@ -24,13 +23,32 @@
 			/>
 
 		<TextView
+			android:id="@+id/tv_meadia_screen"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_centerInParent="true"
-			android:text="Yutuqlar"
+			android:text=" "
+			android:maxLines="1"
+			android:ellipsize="end"
 			android:textColor="@color/black"
-			android:textSize="22sp"
-			/>
+			android:textSize="22sp" />
 	</RelativeLayout>
 
-</LinearLayout>
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/rl_mc">
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			>
+
+			<ImageView
+				android:id="@+id/iv_ams"
+				android:layout_width="match_parent"
+				android:layout_height="300dp"/>
+
+		</RelativeLayout>
+	</ScrollView>
+
+</RelativeLayout>

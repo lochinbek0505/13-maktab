@@ -16,12 +16,9 @@ import kotlinx.android.synthetic.main.items_layout.view.*
 import kotlinx.android.synthetic.main.media_item_layout.view.*
 import kotlinx.android.synthetic.main.rahbariyat_item_layout.view.*
 
-class RahbariyatAdapter(var items: ArrayList<rahbariyat_data>, var listener: ItemSetOnClickListener) :
+class RahbariyatAdapter(var items: ArrayList<rahbariyat_data>) :
     RecyclerView.Adapter<RahbariyatAdapter.Holder>() {
     
-    interface ItemSetOnClickListener {
-        fun onClick(data: rahbariyat_data)
-    }
 
     inner class Holder(var view: View) : RecyclerView.ViewHolder(view)
 
@@ -44,9 +41,7 @@ class RahbariyatAdapter(var items: ArrayList<rahbariyat_data>, var listener: Ite
         Glide.with(holder.itemView.context).load(item.image).into(holder.itemView.iv_ril)
 
 
-        holder.itemView.setOnClickListener {
-            listener.onClick(item)
-        }
+
 
     }
 

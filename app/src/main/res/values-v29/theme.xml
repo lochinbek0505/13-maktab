@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-	<!-- Base application theme. -->
-	<style name="Theme.13maktab" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+	<style name="Theme.13maktab" parent="Theme.MaterialComponents.DayNight.NoActionBar">
 		<!-- Primary brand color. -->
 		<item name="colorPrimary">@color/purple_500</item>
 		<item name="colorPrimaryVariant">@color/white</item>
@@ -11,14 +12,4 @@
 		<!-- Secondary brand color. -->
 
 	</style>
-
-	<style name="Theme.13maktab.NoActionBar">
-		<item name="windowActionBar">false</item>
-		<item name="windowNoTitle">true</item>
-	</style>
-
-	<style name="Theme.13maktab.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" />
-
-	<style name="Theme.13maktab.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark" />
-
 </resources>

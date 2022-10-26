@@ -35,7 +35,7 @@ class ImageView_slayd_adapter(
         position: Int
     ) {
         holder.imageView.setImageResource(imageList[position])
-        if(position == imageList.size - 1) {
+        if (position == imageList.size - 1) {
             viewPager2.post(runnable)
         }
     }

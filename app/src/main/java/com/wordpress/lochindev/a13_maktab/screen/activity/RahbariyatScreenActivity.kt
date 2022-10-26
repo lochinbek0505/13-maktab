@@ -1,5 +1,6 @@
 package com.wordpress.lochindev.a13_maktab.screen.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -20,44 +21,80 @@ class RahbariyatScreenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_rahbariyat_screen)
 
-        viewModel=ViewModelProvider(this).get(RahbariyatActivityViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(RahbariyatActivityViewModel::class.java)
 
-        viewModel.error.observe(this,{
+        viewModel.error.observe(this, {
 
 
-            Toast.makeText(this,it,Toast.LENGTH_LONG).show()
+            Toast.makeText(this, it, Toast.LENGTH_LONG).show()
 
         })
 
-        viewModel.members.observe(this,{
+        viewModel.members.observe(this, {
 
             loadMembers(it)
 
         })
 
         loadMb()
+//        var array = arrayListOf<rahbariyat_data>(
+//
+//            rahbariyat_data(
+//                "",
+//                "Ismoilov Xurshid 1985-yil tug'ilgan. Samarqand davlat universitetini 2010-yil tamomlagan.",
+//                "Madaniy marifiy ishlar bo'yicha direktor o'rinbosari",
+//                "Ismoilov Xurshid Do'smurodovich"
+//            ),
+//            rahbariyat_data(
+//                "",
+//                "Ismoilov Xurshid 1985-yil tug'ilgan. Samarqand davlat universitetini 2010-yil tamomlagan.",
+//                "Madaniy marifiy ishlar bo'yicha direktor o'rinbosari",
+//                "Ismoilov Xurshid Do'smurodovich"
+//            ),
+//            rahbariyat_data(
+//                "",
+//                "Ismoilov Xurshid 1985-yil tug'ilgan. Samarqand davlat universitetini 2010-yil tamomlagan.",
+//                "Madaniy marifiy ishlar bo'yicha direktor o'rinbosari",
+//                "Ismoilov Xurshid Do'smurodovich"
+//            ),
+//            rahbariyat_data(
+//                "",
+//                "Ismoilov Xurshid 1985-yil tug'ilgan. Samarqand davlat universitetini 2010-yil tamomlagan.",
+//                "Madaniy marifiy ishlar bo'yicha direktor o'rinbosari",
+//                "Ismoilov Xurshid Do'smurodovich"
+//            ),
+//            rahbariyat_data(
+//                "",
+//                "Ismoilov Xurshid 1985-yil tug'ilgan. Samarqand davlat universitetini 2010-yil tamomlagan.",
+//                "Madaniy marifiy ishlar bo'yicha direktor o'rinbosari",
+//                "Ismoilov Xurshid Do'smurodovich"
+//            )
+//
+//
+//        )
+//
+////        loadMembers(array)
+        tb_rahbariyat_screen.setOnClickListener {
 
 
+            finish()
 
+        }
 
     }
 
-    fun loadMb(){
+    fun loadMb() {
 
         viewModel.getMembers()
 
     }
 
-    fun loadMembers(members_array:ArrayList<rahbariyat_data>){
+    fun loadMembers(members_array: ArrayList<rahbariyat_data>) {
 
-        val adapter=RahbariyatAdapter(members_array,object :RahbariyatAdapter.ItemSetOnClickListener{
-            override fun onClick(data: rahbariyat_data) {
-                TODO("Not yet implemented")
-            }
+        val adapter =
+            RahbariyatAdapter(members_array)
 
-        })
-
-        rv_rahbariyat.adapter=adapter
+        rv_rahbariyat.adapter = adapter
 
     }
 

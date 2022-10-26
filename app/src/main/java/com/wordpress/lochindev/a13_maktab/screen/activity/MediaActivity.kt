@@ -38,10 +38,9 @@ class MediaActivity : AppCompatActivity() {
 
                 viewmodel.news.observe(this,{
 
-                   load(it)
+                    load(it)
 
                 })
-
 
 
 

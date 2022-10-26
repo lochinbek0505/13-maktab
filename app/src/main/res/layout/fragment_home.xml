@@ -22,6 +22,7 @@
 				android:layout_height="210dp"
 				android:layout_margin="15dp"
 				app:cardCornerRadius="20dp"
+				android:backgroundTint="@color/white"
 				app:cardElevation="5dp">
 
 				<androidx.viewpager2.widget.ViewPager2
@@ -38,6 +39,7 @@
 				android:layout_width="match_parent"
 				android:layout_height="120dp"
 				android:layout_margin="20dp"
+				android:backgroundTint="@color/white"
 				app:cardCornerRadius="10dp"
 				app:cardElevation="5dp">
 
@@ -61,7 +63,7 @@
 						android:layout_alignParentTop="true"
 						android:layout_centerHorizontal="true"
 						android:layout_marginTop="10dp"
-						android:text="So'ngi e'lon:"
+						android:text="@string/so_ngi_e_lon"
 						android:textColor="@color/purple_700"
 						android:textSize="17sp"
 						android:textStyle="bold" />
@@ -121,7 +123,7 @@ ehtiyot choralarini ko'ring"
 					android:layout_alignParentStart="true"
 					android:layout_centerVertical="true"
 					android:layout_marginStart="15dp"
-					android:text="YANGILIKLAR:"
+					android:text="@string/yangiliklar_1"
 					android:textColor="@color/text"
 					android:textSize="16sp"
 					android:textStyle="bold" />
@@ -133,7 +135,7 @@ ehtiyot choralarini ko'ring"
 					android:layout_alignParentEnd="true"
 					android:layout_marginEnd="10dp"
 					android:background="@drawable/button_shape"
-					android:text="Ko'proq yuklash"
+					android:text="@string/ko_proq_yuklash"
 					android:textColor="@color/purple_700"
 					android:textSize="8sp" />
 			</RelativeLayout>
@@ -154,7 +156,7 @@ ehtiyot choralarini ko'ring"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:layout_marginStart="10dp"
-				android:text="Bo'limlar"
+				android:text="@string/bo_limlar"
 				android:textColor="@color/text"
 				android:textSize="16sp"
 				android:textStyle="bold" />
@@ -166,7 +168,7 @@ ehtiyot choralarini ko'ring"
 				android:layout_marginTop="10dp"
 				android:layout_marginEnd="20dp"
 				android:layout_marginBottom="15dp"
-				android:background="@color/white"
+				android:backgroundTint="@color/white"
 				app:cardCornerRadius="15dp"
 				app:cardElevation="10dp">
 
@@ -192,7 +194,7 @@ ehtiyot choralarini ko'ring"
 						android:layout_centerInParent="true"
 						android:layout_centerVertical="true"
 						android:layout_marginStart="20dp"
-						android:text="Maktab"
+						android:text="@string/maktab"
 						android:textColor="@color/black"
 						android:textSize="22sp" />
 
@@ -215,7 +217,7 @@ ehtiyot choralarini ko'ring"
 				android:layout_marginStart="20dp"
 				android:layout_marginEnd="20dp"
 				android:layout_marginBottom="15dp"
-				android:background="@color/white"
+				android:backgroundTint="@color/white"
 				app:cardCornerRadius="15dp"
 				app:cardElevation="10dp">
 
@@ -240,7 +242,7 @@ ehtiyot choralarini ko'ring"
 						android:layout_height="wrap_content"
 						android:layout_centerInParent="true"
 						android:layout_marginStart="20dp"
-						android:text="Rahbariyat"
+						android:text="@string/rahbariyat"
 						android:textColor="@color/black"
 						android:textSize="22sp" />
 
@@ -263,7 +265,7 @@ ehtiyot choralarini ko'ring"
 				android:layout_marginStart="20dp"
 				android:layout_marginEnd="20dp"
 				android:layout_marginBottom="15dp"
-				android:background="@color/white"
+				android:backgroundTint="@color/white"
 				app:cardCornerRadius="15dp"
 				app:cardElevation="10dp">
 
@@ -312,7 +314,7 @@ ehtiyot choralarini ko'ring"
 				android:layout_marginStart="20dp"
 				android:layout_marginEnd="20dp"
 				android:layout_marginBottom="10dp"
-				android:background="@color/white"
+				android:backgroundTint="@color/white"
 				app:cardCornerRadius="15dp"
 				app:cardElevation="10dp">
 
@@ -408,6 +410,7 @@ ehtiyot choralarini ko'ring"
 							android:layout_height="wrap_content"
 							android:layout_alignParentTop="true"
 							android:layout_marginStart="10dp"
+							android:textColor="@color/text"
 							android:text="O'g'il bolalar"
 							android:textSize="14sp" />
 
@@ -442,6 +445,8 @@ ehtiyot choralarini ko'ring"
 								android:layout_height="wrap_content"
 								android:layout_marginStart="5dp"
 								android:text="ta o'quvchi"
+								android:textColor="@color/text"
+
 								android:textSize="12sp" />
 
 						</LinearLayout>
@@ -469,6 +474,8 @@ ehtiyot choralarini ko'ring"
 							android:layout_alignParentTop="true"
 							android:layout_marginStart="10dp"
 							android:text="Qiz bolalar"
+							android:textColor="@color/text"
+
 							android:textSize="14sp" />
 
 						<ImageView
@@ -502,6 +509,8 @@ ehtiyot choralarini ko'ring"
 								android:layout_height="wrap_content"
 								android:layout_marginStart="5dp"
 								android:text="ta o'quvchi"
+								android:textColor="@color/text"
+
 								android:textSize="12sp" />
 
 						</LinearLayout>
@@ -522,6 +531,7 @@ ehtiyot choralarini ko'ring"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:layout_centerInParent="true"
+							android:textColor="@color/text"
 							android:text="Jami" />
 
 						<TextView
@@ -567,6 +577,7 @@ ehtiyot choralarini ko'ring"
 							android:layout_height="wrap_content"
 							android:layout_marginTop="5dp"
 							android:text="-"
+							android:textColor="@color/text"
 							android:textSize="15sp" />
 					</LinearLayout>
 
@@ -598,6 +609,7 @@ ehtiyot choralarini ko'ring"
 							android:layout_height="wrap_content"
 							android:layout_marginTop="5dp"
 							android:text="-"
+							android:textColor="@color/text"
 							android:textSize="15sp" />
 					</LinearLayout>
 
@@ -630,6 +642,7 @@ ehtiyot choralarini ko'ring"
 							android:layout_height="wrap_content"
 							android:layout_marginTop="5dp"
 							android:text="-"
+							android:textColor="@color/text"
 							android:textSize="15sp" />
 					</LinearLayout>
 
@@ -666,6 +679,7 @@ ehtiyot choralarini ko'ring"
 						android:layout_height="100dp"
 						android:layout_margin="10dp"
 						app:cardCornerRadius="10dp"
+						android:backgroundTint="@color/white"
 						app:cardElevation="5dp">
 
 						<LinearLayout
@@ -694,6 +708,8 @@ ehtiyot choralarini ko'ring"
 						android:id="@+id/id_edu"
 						android:layout_width="190dp"
 						android:layout_height="100dp"
+						android:backgroundTint="@color/white"
+
 						android:layout_margin="10dp"
 						app:cardCornerRadius="10dp"
 						app:cardElevation="5dp">
@@ -721,6 +737,8 @@ ehtiyot choralarini ko'ring"
 
 					<androidx.cardview.widget.CardView
 						android:id="@+id/id_khan"
+						android:backgroundTint="@color/white"
+
 						android:layout_width="170dp"
 						android:layout_height="100dp"
 						android:layout_margin="10dp"
@@ -752,6 +770,8 @@ ehtiyot choralarini ko'ring"
 						android:id="@+id/id_coders"
 						android:layout_width="170dp"
 						android:layout_height="100dp"
+						android:backgroundTint="@color/white"
+
 						android:layout_margin="10dp"
 						app:cardCornerRadius="10dp"
 						app:cardElevation="5dp">
@@ -781,6 +801,8 @@ ehtiyot choralarini ko'ring"
 						android:id="@+id/id_ziyonet"
 						android:layout_width="190dp"
 						android:layout_height="100dp"
+						android:backgroundTint="@color/white"
+
 						android:layout_margin="10dp"
 						app:cardCornerRadius="10dp"
 						app:cardElevation="5dp">
@@ -820,8 +842,10 @@ ehtiyot choralarini ko'ring"
 				android:textStyle="bold" />
 
 			<androidx.cardview.widget.CardView
+				android:id="@+id/hf_google_map"
 				android:layout_width="match_parent"
 				android:layout_height="240dp"
+				android:backgroundTint="@color/white"
 				android:layout_marginStart="15dp"
 				android:layout_marginTop="20dp"
 				android:layout_marginEnd="15dp"

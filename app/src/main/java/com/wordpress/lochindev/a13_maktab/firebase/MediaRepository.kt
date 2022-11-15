@@ -13,7 +13,7 @@ class MediaRepository {
         news_array_lis= arrayListOf()
 
 
-        mFirestore.collection("NEWS").orderBy("data", Query.Direction.ASCENDING)
+        mFirestore.collection("NEWS")
             .addSnapshotListener(object : EventListener<QuerySnapshot> {
                 override fun onEvent(value: QuerySnapshot?, error: FirebaseFirestoreException?) {
                     if(error!=null){

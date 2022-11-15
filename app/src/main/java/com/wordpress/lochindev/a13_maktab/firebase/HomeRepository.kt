@@ -43,7 +43,7 @@ class HomeRepository {
         rahbariyat_array_list= arrayListOf()
 
 
-        mFirestore.collection("RAHBARIYAT").orderBy("name", Query.Direction.ASCENDING)
+        mFirestore.collection("RAHBARIYAT")
             .addSnapshotListener(object : EventListener<QuerySnapshot> {
                 override fun onEvent(value: QuerySnapshot?, error: FirebaseFirestoreException?) {
                     if(error!=null){

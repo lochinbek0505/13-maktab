@@ -4,51 +4,137 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
+	android:background="#F7FDFCFC"
 	tools:context=".screen.activity.MediaScreenActivity">
+
 	<RelativeLayout
 		android:id="@+id/rl_mc"
 		android:layout_width="match_parent"
 		android:layout_height="?attr/actionBarSize"
 		android:layout_marginBottom="20dp"
-		android:elevation="4dp"
-		android:background="#F7FDFCFC">
+		android:background="#F7FDFCFC"
+		android:elevation="4dp">
+
 		<ImageView
 			android:id="@+id/tb_meadia_screen"
 			android:layout_width="24dp"
 			android:layout_height="24dp"
 			android:layout_alignParentStart="true"
-			android:layout_marginStart="20dp"
 			android:layout_centerVertical="true"
-			android:src="@drawable/ic_baseline_arrow_back_24"
-			/>
+			android:layout_marginStart="20dp"
+			android:src="@drawable/ic_baseline_arrow_back_24" />
 
 		<TextView
-			android:id="@+id/tv_meadia_screen"
-			android:layout_width="wrap_content"
+			android:id="@+id/tv_toolbar_ams"
+			android:layout_width="230dp"
 			android:layout_height="wrap_content"
 			android:layout_centerInParent="true"
-			android:text=" "
-			android:maxLines="1"
+			android:layout_marginStart="10dp"
 			android:ellipsize="end"
+			android:maxLength="27"
+			android:maxLines="1"
+			android:text="aaaa aaaa aa sss wsx cdsw sxd "
 			android:textColor="@color/black"
-			android:textSize="22sp" />
+			android:textSize="18sp" />
 	</RelativeLayout>
 
 	<ScrollView
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:layout_below="@+id/rl_mc">
+		android:layout_below="@+id/rl_mc"
+		android:scrollbars="none">
+
 		<RelativeLayout
 			android:layout_width="match_parent"
-			android:layout_height="match_parent"
+			android:layout_height="wrap_content"
 			>
 
 			<ImageView
 				android:id="@+id/iv_ams"
 				android:layout_width="match_parent"
-				android:layout_height="300dp"/>
+				android:layout_height="200dp"
+				android:layout_alignParentTop="true"
+				android:layout_marginStart="10dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginEnd="10dp"
+				android:layout_marginBottom="10dp"
+				android:scaleType="fitXY"
+				android:src="@drawable/ic_for_aloqa" />
+
+			<TextView
+				android:id="@+id/tv_title_ams"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/iv_ams"
+				android:layout_marginStart="10dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginEnd="10dp"
+				android:layout_marginBottom="10dp"
+				android:fontFamily="@font/intermedium"
+				android:textStyle="bold"
+				android:text="Salom yana bir yangilik bugun jbvftyy ytcdutvu cdcytvcyrj"
+				android:textColor="#1A1A1B"
+				android:textSize="18sp" />
+
+			<RelativeLayout
+				android:id="@+id/cv_ams"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/tv_title_ams"
+
+				>
+
+				<androidx.cardview.widget.CardView
+					android:layout_width="190dp"
+					android:layout_height="40dp"
+					android:layout_alignParentEnd="true"
+					android:layout_margin="10dp"
+					android:backgroundTint="@color/white"
+					app:cardCornerRadius="10dp"
+					app:cardElevation="4dp">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:gravity="center"
+						android:orientation="horizontal">
+
+						<ImageView
+							android:layout_width="18dp"
+							android:layout_height="18dp"
+							android:src="@drawable/ic_baseline_access_time_black" />
+
+						<TextView
+							android:id="@+id/tv_data_ams"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginStart="5dp"
+							android:layout_marginEnd="10dp"
+							android:text="9.16.2022 9:00"
+							android:textColor="@color/black"
+							android:textSize="17sp" />
+					</LinearLayout>
+				</androidx.cardview.widget.CardView>
+			</RelativeLayout>
+
+
+			<TextView
+				android:id="@+id/tv_text_ams"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/cv_ams"
+				android:layout_marginStart="10dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginEnd="10dp"
+				android:layout_marginBottom="10dp"
+				android:fontFamily="@font/intermedium"
+				android:text=" nklhnkhtioerhnkv ie"
+				android:textColor="#1A1A1B"
+				android:textSize="17sp" />
 
 		</RelativeLayout>
+
+
 	</ScrollView>
 
 </RelativeLayout>

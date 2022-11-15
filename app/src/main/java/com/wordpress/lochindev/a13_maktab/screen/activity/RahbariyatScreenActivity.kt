@@ -26,7 +26,7 @@ class RahbariyatScreenActivity : AppCompatActivity() {
         viewModel.error.observe(this, {
 
 
-            Toast.makeText(this, it, Toast.LENGTH_LONG).show()
+//            Toast.makeText(this, it, Toast.LENGTH_LONG).show()
 
         })
 
@@ -37,47 +37,11 @@ class RahbariyatScreenActivity : AppCompatActivity() {
         })
 
         loadMb()
-//        var array = arrayListOf<rahbariyat_data>(
-//
-//            rahbariyat_data(
-//                "",
-//                "Ismoilov Xurshid 1985-yil tug'ilgan. Samarqand davlat universitetini 2010-yil tamomlagan.",
-//                "Madaniy marifiy ishlar bo'yicha direktor o'rinbosari",
-//                "Ismoilov Xurshid Do'smurodovich"
-//            ),
-//            rahbariyat_data(
-//                "",
-//                "Ismoilov Xurshid 1985-yil tug'ilgan. Samarqand davlat universitetini 2010-yil tamomlagan.",
-//                "Madaniy marifiy ishlar bo'yicha direktor o'rinbosari",
-//                "Ismoilov Xurshid Do'smurodovich"
-//            ),
-//            rahbariyat_data(
-//                "",
-//                "Ismoilov Xurshid 1985-yil tug'ilgan. Samarqand davlat universitetini 2010-yil tamomlagan.",
-//                "Madaniy marifiy ishlar bo'yicha direktor o'rinbosari",
-//                "Ismoilov Xurshid Do'smurodovich"
-//            ),
-//            rahbariyat_data(
-//                "",
-//                "Ismoilov Xurshid 1985-yil tug'ilgan. Samarqand davlat universitetini 2010-yil tamomlagan.",
-//                "Madaniy marifiy ishlar bo'yicha direktor o'rinbosari",
-//                "Ismoilov Xurshid Do'smurodovich"
-//            ),
-//            rahbariyat_data(
-//                "",
-//                "Ismoilov Xurshid 1985-yil tug'ilgan. Samarqand davlat universitetini 2010-yil tamomlagan.",
-//                "Madaniy marifiy ishlar bo'yicha direktor o'rinbosari",
-//                "Ismoilov Xurshid Do'smurodovich"
-//            )
-//
-//
-//        )
-//
-////        loadMembers(array)
+
         tb_rahbariyat_screen.setOnClickListener {
 
-
             finish()
+
 
         }
 

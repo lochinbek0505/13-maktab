@@ -1,5 +1,6 @@
 package com.wordpress.lochindev.a13_maktab.screen.activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -9,13 +10,14 @@ import com.wordpress.lochindev.a13_maktab.adapter.MediaAdapter
 import com.wordpress.lochindev.a13_maktab.databinding.ActivityMediaBinding
 import com.wordpress.lochindev.a13_maktab.model.media_data
 import com.wordpress.lochindev.a13_maktab.screen.viewmodel.MediaActivityViewModel
+import kotlinx.android.synthetic.main.activity_media.*
+import kotlinx.android.synthetic.main.activity_media_screen.*
 
 class MediaActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMediaBinding
     private lateinit var viewmodel:MediaActivityViewModel
     private lateinit var news_list:ArrayList<media_data>
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,6 +30,9 @@ class MediaActivity : AppCompatActivity() {
 
         val activity:Int=intent.extras!!.getInt("Activity")
 
+        media_back.setOnClickListener {
+            finish()
+        }
 
         when(activity){
 
@@ -61,7 +66,9 @@ class MediaActivity : AppCompatActivity() {
         val adapter=MediaAdapter(array,object:MediaAdapter.ItemSetOnClickListener{
             override fun onClick(data: media_data) {
 
-                Toast.makeText(this@MediaActivity,data.toString(),Toast.LENGTH_LONG).show()
+                val intent= Intent(applicationContext,MediaScreenActivity::class.java)
+                intent.putExtra("MEDIA",data)
+                startActivity(intent)
 
             }
 
